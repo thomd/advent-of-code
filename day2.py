@@ -39,20 +39,20 @@
 #   Z: you need to win (A Z -> A Y, B Z -> B Z, C Z -> C X)
 
 
-def calculateScore(result):
-    score = 0
+def score(result):
+    s = 0
     you = result.split()[1]
     if you == 'X':
-        score += 1
+        s += 1
     if you == 'Y':
-        score += 2
+        s += 2
     if you == 'Z':
-        score += 3
+        s += 3
     if result in ['A X', 'B Y', 'C Z']:
-        score += 3
+        s += 3
     if result in ['A Y', 'B Z', 'C X']:
-        score += 6
-    return score
+        s += 6
+    return s
 
 mapping = {
     'A X': 'A Z',
@@ -69,9 +69,9 @@ mapping = {
 with open('input/day2.txt') as file:
     results = [line.rstrip() for line in file]
 
-total = sum([calculateScore(result) for result in results])
+total = sum([score(result) for result in results])
 print(f'part 1: {total}')
 
-total = sum([calculateScore(mapping[result]) for result in results])
+total = sum([score(mapping[result]) for result in results])
 print(f'part 2: {total}')
 
