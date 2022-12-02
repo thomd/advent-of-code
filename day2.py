@@ -27,10 +27,10 @@
 #   B Y
 #   C Z
 
-# loose:
-#   A Z: your Scissors loose opponents Rock
-#   B X: your Rock loose opponents Paper
-#   C Y: your Paper loose opponents Scissors
+# lose:
+#   A Z: your Scissors lose opponents Rock
+#   B X: your Rock lose opponents Paper
+#   C Y: your Paper lose opponents Scissors
 
 
 
