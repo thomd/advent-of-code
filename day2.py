@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# https://adventofcode.com/2022/day/2
+
+
 # opponent:
 #   A: Rock
 #   B: Paper
