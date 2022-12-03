@@ -47,7 +47,7 @@ def part_two(file):
 
 def test_part_two():
     items = part_two('input/day3_test.txt')
-    assert items == 71
+    assert items == 70
 
 
 print(f"part 2: {part_two('input/day3.txt')}")
